@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1443930646 "project2.tex" "project2.pdf" "project2" 1443930647
+["pdflatex"] 1443933488 "project2.tex" "project2.pdf" "project2" 1443933491
   "/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1335995445 7612 c47308d923ec19888707b0f1792b326a ""
   "/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1303254447 7324 11d14f318d865f420e692d4e6c9c18c3 ""
@@ -131,13 +131,16 @@
   "images/Picture1.pdf" 1443662651 8448 befdbaa3e1f2e1da343197ae188a48d5 ""
   "images/Picture10.pdf" 1443929843 9357 c31cab811518b32710e4296486102c3f ""
   "images/Picture11.pdf" 1443930543 12484 86d441903a911260cbe978ad06bd408c ""
+  "images/Picture12.pdf" 1443931429 9106 d8aee8f1ec7be13d3481dd13cee4e0be ""
+  "images/Picture13.pdf" 1443932381 10214 5cc34855d74ba0627e078b7a7f9b5b68 ""
+  "images/Picture14.pdf" 1443932984 10295 82dd91a254f78d15fbf6b6c404d6fc92 ""
   "images/Picture2.pdf" 1443664696 8323 840925f8245298f9f4f8831221b1e2de ""
   "images/Picture3.pdf" 1443666827 10522 62f8e1259383ce938fe6344ebb6ced6f ""
   "images/Picture7.pdf" 1443916787 9307 d59b7cffa0a97ac0b7406c6be4e82caa ""
   "images/Picture8.pdf" 1443916896 9871 e4c606e6cebcff61ee50758f1d9c3404 ""
   "images/Picture9.pdf" 1443917709 12828 c58eece6a3be292f3e7d6bf435163a90 ""
-  "project2.aux" 1443930647 989 855209608e872c622881c6358863017c ""
-  "project2.tex" 1443930645 14355 1a5a8ea67676e730aed25269c97526aa ""
+  "project2.aux" 1443933491 910 ed1ed6f24305c628ee0db255285ec5b3 ""
+  "project2.tex" 1443933488 15873 714b081a5c4ccc9d004deb55887985cf ""
   (generated)
   "project2.log"
   "project2.pdf"

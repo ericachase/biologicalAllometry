@@ -110,8 +110,13 @@
 			\end{center}
 			The relatively small values for the error indicate that the new model is very very close to the original data. 
 			\newline \newline
-			However, we can also skip the original logarithmic transformation to apply a curve fit to the first set of data. Loosely, the original scatter plot appears visually like an exponential function, where $C = .001 \times (mass)^{2}$. Using this, we can modify the exponential function to beter fit our data, such as:
-		\subsection{Model Extrema}
+			However, we can also skip the original logarithmic transformation to apply a curve fit to the first set of data. Loosely, the original scatter plot appears visually like an exponential function, where $C = n^{(mass)}$. Using this, we can modify the exponential function to beter fit our data. Using curve-fitting software, we're able to derive a non-linear regression function, such that $C = 1.039861114^{(mass)}$. This new curve, overlayed over the original curve, looks like this:
+			\newline \newline
+			\centerline{\includegraphics{Picture12.pdf}}
+			\newline \newline
+			As both functions increase, the original curve seems to separate significiantly from the original, implying that the model is unstable for a larger mass.
+			\newline \newline
+			This instability raises a question: for which mass is the model unreliable? 
 	\section{Metabolism}
 		Another important allometric relationship is that of metabolism to surface area. Specifically, the amount of heat energy an animal produces is proportional to the amount of surface area required to radiate or absorb heat. However, it's very difficult to accurately measure the surface area of most animals, so a model that depends on mass is very helpful. 
 		\subsection{Power Law Model}
@@ -199,6 +204,15 @@
 			\newline \newline
 			By eliminating extreme factors of the model, we are able to more accurately create and depict a linear model. 
 		\subsection{Non-linear Regression}
+			Once again, another accurate way to depict the data is to perform a non-linear regression to the original curve. Using nonlinear curve-fitting software, a close model to the original data is $B =2.810299203 \times 10^{-3} \times M$. Overlayed over the original curve, this fit can be seen below:
+			\newline \newline
+			\centerline{\includegraphics{Picture13.pdf}}
+			\newline \newline
+			Once again, the moose shows itself as an obious outlier. Removing this and the two heaviest mammals once again, we should get a much better fitting curve. Using the new model $B = 4.409608826 \times 10^{-3} \times M$, we achieve a much better fitting curve in a smaller range: 
+			\newline \newline
+			\centerline{\includegraphics{Picture14.pdf}}
+			\newline \newline
+			This better helps to show the correlation between body mass and BMR, showing that there indeed is a strong proportional relationship between the two.
 		\subsection{Further Exploration}
 			Another interesting example of biological allometry is shown in “Brain Size, Life History, and Metabolism at the Marsupial/placental Dichotomy.” by Vera Weisbecker and Anjali Goswami. Specifically, the article observes the relationship between mammallian basal metabolic rate and brain size. Although this correlation is heavily debated, many scientists are beginning to find a relationship between the two. We can use the standardaized allometric power model to derive a model representing the proportionality of brain size ($S$) to basal metabolic rate ($B$), or $S \propto B^{a}$:
 			\newline
@@ -233,6 +247,6 @@
 			\newline \newline
 			With the exception of humans and dolphins, the data seems to directly show a strong correlation between body mass and brain size; that is, as body mass increases, the brain size grows by a smaller proportion. The smallest mammal, the mouse, has the largest brain size compared to its body, and the larger mammals, such as the elephant or the hippopotamus, have the smallest brains compared to their body mass. This makes sense assuming maintained proportionality with BMR, as more energy is alloted towards running a larger body than a smaller one. The obvious outliers, the human and the dolphin, may be the result of other factors, such as gestational period and postnatal independence. 
 	\section{Conclusion}
-		Biological allometry serves as an extremely interesting analysis of propotional physiological relationships. 
+		Biological allometry serves as an extremely interesting analysis of propotional physiological relationships. Using power models and nonlinear regressions, we can form accurate analyses of observed data and use that to predict
 \end{document}
 
