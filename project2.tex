@@ -108,14 +108,14 @@
 					1.70541 & 1.870567454 & -0.165157454
 				\end{tabular}
 			\end{center}
-			The relatively small values for the error indicate that the new model is very very close to the original data. However, we can also skip the original logarithmic transformation to apply a curve fit to the first set of data. Loosely, the original scatter plot appears visually like an exponential function, where $C = .001 \times (mass)^{2}$. Using this, we can modify the exponential function to beter fit our data, such as:
+			The relatively small values for the error indicate that the new model is very very close to the original data. 
+			\newline \newline
+			However, we can also skip the original logarithmic transformation to apply a curve fit to the first set of data. Loosely, the original scatter plot appears visually like an exponential function, where $C = .001 \times (mass)^{2}$. Using this, we can modify the exponential function to beter fit our data, such as:
 		\subsection{Model Extrema}
 	\section{Metabolism}
-	% Kleiber's law, metabolic rate q_{0} is proportional to body mass M raised to the 3/4 power:
-	% q_{0} \sim M^{\frac 3 4}
 		Another important allometric relationship is that of metabolism to surface area. Specifically, the amount of heat energy an animal produces is proportional to the amount of surface area required to radiate or absorb heat. However, it's very difficult to accurately measure the surface area of most animals, so a model that depends on mass is very helpful. 
 		\subsection{Power Law Model}
-			One important law to note is Kleiber's law, which states that an animal's metabolic rate is proportional to its body mass raised to the $\frac 3 4$ power or $B \propto M^{\frac 3 4}$. Using a proportionality constant, $k$, we can derive a model, such that $B = kM^{\frac 3 4}$.
+			One important law to note is Kleiber's law, which states that an animal's metabolic rate is proportional to its body mass raised to the $\frac 3 4$ power, or $B \propto M^{\frac 3 4}$. Using a proportionality constant, $k$, we can derive a model, such that $B = kM^{\frac 3 4}$.
 		\subsection{Regression and Outliers}
 			The problem gives us a set of data that relates the body mass of a certain number of species to their basal metabolic rate, seen below:
 			\begin{center}
@@ -193,7 +193,11 @@
 			\newline \newline
 			\centerline{\includegraphics{Picture9.pdf}}
 			\newline \newline
-			While there are a couple obvious outliers, generally the regression seems to be a very good fit. One major outlier is the \emph{Alces americanus}, or moose. The moose's basal metabolic rate is oddly close to is mass, especially in the logarithmic transformation. Removing this data point does not significantly change the regression, but does create a new fit where $B = 0.836507M - 1.63441$.
+			While there are a couple obvious outliers, generally the regression seems to be a very good fit. One major outlier is the \emph{Alces americanus}, or moose. The moose's basal metabolic rate is oddly close to is mass, especially in the logarithmic transformation. Removing this data point does not significantly change the regression, but does create a new fit where $B = 0.836507M - 1.63441$. Next, if we remove the heaviest animals from the model, the coefficients also don't seem to effect the model much at all, but did allow for a slightly better fit when comparing the original transformed data to the linear regression.
+			\newline \newline
+			\centerline{\includegraphics{Picture11.pdf}}
+			\newline \newline
+			By eliminating extreme factors of the model, we are able to more accurately create and depict a linear model. 
 		\subsection{Non-linear Regression}
 		\subsection{Further Exploration}
 			Another interesting example of biological allometry is shown in “Brain Size, Life History, and Metabolism at the Marsupial/placental Dichotomy.” by Vera Weisbecker and Anjali Goswami. Specifically, the article observes the relationship between mammallian basal metabolic rate and brain size. Although this correlation is heavily debated, many scientists are beginning to find a relationship between the two. We can use the standardaized allometric power model to derive a model representing the proportionality of brain size ($S$) to basal metabolic rate ($B$), or $S \propto B^{a}$:
@@ -229,6 +233,6 @@
 			\newline \newline
 			With the exception of humans and dolphins, the data seems to directly show a strong correlation between body mass and brain size; that is, as body mass increases, the brain size grows by a smaller proportion. The smallest mammal, the mouse, has the largest brain size compared to its body, and the larger mammals, such as the elephant or the hippopotamus, have the smallest brains compared to their body mass. This makes sense assuming maintained proportionality with BMR, as more energy is alloted towards running a larger body than a smaller one. The obvious outliers, the human and the dolphin, may be the result of other factors, such as gestational period and postnatal independence. 
 	\section{Conclusion}
-		
+		Biological allometry serves as an extremely interesting analysis of propotional physiological relationships. 
 \end{document}
 
