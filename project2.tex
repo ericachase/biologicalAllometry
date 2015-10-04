@@ -24,7 +24,7 @@
 				$y$ & Measure of size \\
 				$a$ & Constant exponent \\
 				\hline
-				$R_{D}$ & Reproductive desirablity \\
+				$R_{D}$ & Reproductive desirability \\
 				$C$ & Claw size \\
 				$b$ & Exponential constant for mass \\
 				\hline
@@ -35,11 +35,11 @@
 			\end{tabular}
 		\end{center}
 	\section{Fiddler Crab}
-		The male fiddler crap is a perfect exmple of allometry; they have an enlarged major claw, used for fighting and threatening other males and attracting females, that is proportional to their $mass^{b}$. Additionally, their reproductive desireability ($R_{D}$) is proportional to their claw size ($C$). This can be displayed as:
+		The male fiddler crap is a perfect example of allometry; they have an enlarged major claw, used for fighting and threatening other males and attracting females, that is proportional to their $mass^{b}$. Additionally, their reproductive desirability ($R_{D}$) is proportional to their claw size ($C$). This can be displayed as:
 		\newline \newline
 		\centerline{$R_{D} \propto C \propto mass^{b}$}
 		\newline \newline
-		Given this information, we can combine it with standard allometric power law functions to obtain a model. We know that the standard power law function format follows $x = ky^{a}$ and that $R_{D} \propto C \propto mass^{b}$, meaning $R_{D} \propto mass^{b}$. Since reproductive desirability is the quantity of interest, we can replace $x$ with $R_{D}$. Additionally, we know that size is being measured as mass, raised to the power of $b$. Thus, we can subsitute $y^{a}$ with $mass^{b}$. Finally, we need a proportionality constant, which we will leave as $k$. this gives a new model to measure reproductive disirability as a function of mass:
+		Given this information, we can combine it with standard allometric power law functions to obtain a model. We know that the standard power law function format follows $x = ky^{a}$ and that $R_{D} \propto C \propto mass^{b}$, meaning $R_{D} \propto mass^{b}$. Since reproductive desirability is the quantity of interest, we can replace $x$ with $R_{D}$. Additionally, we know that size is being measured as mass, raised to the power of $b$. Thus, we can substitute $y^{a}$ with $mass^{b}$. Finally, we need a proportionality constant, which we will leave as $k$. this gives a new model to measure reproductive desirability as a function of mass:
 		\newline \newline
 		\centerline{$R_{D} = k (mass)^{b}$}
 		\subsection{Logarithmic Transformation and Linear Regression}
@@ -110,13 +110,44 @@
 			\end{center}
 			The relatively small values for the error indicate that the new model is very very close to the original data. 
 			\newline \newline
-			However, we can also skip the original logarithmic transformation to apply a curve fit to the first set of data. Loosely, the original scatter plot appears visually like an exponential function, where $C = n^{(mass)}$. Using this, we can modify the exponential function to beter fit our data. Using curve-fitting software, we're able to derive a non-linear regression function, such that $C = 1.039861114^{(mass)}$. This new curve, overlayed over the original curve, looks like this:
+			However, we can also skip the original logarithmic transformation to apply a curve fit to the first set of data. Loosely, the original scatter plot appears visually like an exponential function, where $C = n^{(mass)}$. Using this, we can modify the exponential function to better fit our data. Using curve-fitting software, we're able to derive a non-linear regression function, such that $C = 1.039861114^{(mass)}$. This new curve, overlaid over the original curve, looks like this:
 			\newline \newline
 			\centerline{\includegraphics{Picture12.pdf}}
 			\newline \newline
-			As both functions increase, the original curve seems to separate significiantly from the original, implying that the model is unstable for a larger mass.
+			As both functions increase, the original curve seems to separate significantly from the original, implying that the model is unstable for a larger mass.
 			\newline \newline
-			This instability raises a question: for which mass is the model unreliable? 
+			This instability raises a question: for which mass is the model unreliable? One interesting fact about fiddler crabs is that the major claw can be up to 50\% of their total body mass, but generally no larger. Plotting the data further using the derived nonlinear model, this model starts to become unbelievable for crabs weighing above 99g, as their major claw becomes to large to support:
+			\begin{center}
+				\begin{tabular}{c c c}
+					Mass (g) & ~Claw size (g) \\
+					\hline
+					4.74516 & 1.203789898 \\
+					10.4439 & 1.504141631 \\
+					14.1628 & 1.739475498 \\
+					18.8073 & 2.085740492 \\
+					23.2829 & 2.484477654 \\
+					29.0201 & 3.109037809 \\
+					33.2396 & 3.666514795 \\
+					37.577 & 4.34392454 \\
+					42.7777 & 5.323115778 \\
+					49.6655 & 6.967687183 \\
+					54.6655 & 8.471597902 \\
+					59.6655 & 10.30011382 \\
+					64.6655 & 12.52329795 \\
+					69.6655 & 15.22633577 \\
+					74.6655 & 18.51279927 \\
+					79.6655 & 22.50861546 \\
+					84.6655 & 27.36689156 \\
+					89.6655 & 33.27378153 \\
+					94.6655 & 40.45561897 \\
+					99.6655 & 49.18758949 \\
+					104.6655 & 59.80427493 \\
+					109.6655 & 72.71247355 \\
+					114.6655 & 88.40678725 \\
+					119.6655 & 107.4885731 \\
+					124.6655 & 130.6889857 
+				\end{tabular}
+			\end{center}
 	\section{Metabolism}
 		Another important allometric relationship is that of metabolism to surface area. Specifically, the amount of heat energy an animal produces is proportional to the amount of surface area required to radiate or absorb heat. However, it's very difficult to accurately measure the surface area of most animals, so a model that depends on mass is very helpful. 
 		\subsection{Power Law Model}
@@ -154,7 +185,7 @@
 					\emph{Orcinus orca} & 3221000 & 7826
 				\end{tabular}
 			\end{center}
-			Once again, the wide range of this data makes it very difficult to plot in a meaningful way. Espcially with the inclusion of the \emph{Orcinus orca}, the current plot is very difficult to read:
+			Once again, the wide range of this data makes it very difficult to plot in a meaningful way. Especially with the inclusion of the \emph{Orcinus orca}, the current plot is very difficult to read:
 			\newline \newline
 			\centerline{\includegraphics{Picture7.pdf}}
 			\newline \newline 
@@ -204,27 +235,27 @@
 			\newline \newline
 			By eliminating extreme factors of the model, we are able to more accurately create and depict a linear model. 
 		\subsection{Non-linear Regression}
-			Once again, another accurate way to depict the data is to perform a non-linear regression to the original curve. Using nonlinear curve-fitting software, a close model to the original data is $B =2.810299203 \times 10^{-3} \times M$. Overlayed over the original curve, this fit can be seen below:
+			Once again, another accurate way to depict the data is to perform a non-linear regression to the original curve. Using nonlinear curve-fitting software, a close model to the original data is $B =2.810299203 \times 10^{-3} \times M$. Overlaid over the original curve, this fit can be seen below:
 			\newline \newline
 			\centerline{\includegraphics{Picture13.pdf}}
 			\newline \newline
-			Once again, the moose shows itself as an obious outlier. Removing this and the two heaviest mammals once again, we should get a much better fitting curve. Using the new model $B = 4.409608826 \times 10^{-3} \times M$, we achieve a much better fitting curve in a smaller range: 
+			Once again, the moose shows itself as an obvious outlier. Removing this and the two heaviest mammals once again, we should get a much better fitting curve. Using the new model $B = 4.409608826 \times 10^{-3} \times M$, we achieve a much better fitting curve in a smaller range: 
 			\newline \newline
 			\centerline{\includegraphics{Picture14.pdf}}
 			\newline \newline
 			This better helps to show the correlation between body mass and BMR, showing that there indeed is a strong proportional relationship between the two.
 		\subsection{Further Exploration}
-			Another interesting example of biological allometry is shown in “Brain Size, Life History, and Metabolism at the Marsupial/placental Dichotomy.” by Vera Weisbecker and Anjali Goswami. Specifically, the article observes the relationship between mammallian basal metabolic rate and brain size. Although this correlation is heavily debated, many scientists are beginning to find a relationship between the two. We can use the standardaized allometric power model to derive a model representing the proportionality of brain size ($S$) to basal metabolic rate ($B$), or $S \propto B^{a}$:
+			Another interesting example of biological allometry is shown in “Brain Size, Life History, and Metabolism at the Marsupial/placental Dichotomy.” by Vera Weisbecker and Anjali Goswami. Specifically, the article observes the relationship between mammalian basal metabolic rate and brain size. Although this correlation is heavily debated, many scientists are beginning to find a relationship between the two. We can use the standardized allometric power model to derive a model representing the proportionality of brain size ($S$) to basal metabolic rate ($B$), or $S \propto B^{a}$:
 			\newline
 			\centerline{$S = kB^{a}$}
 			\newline
-			An important note the article makes is that there are two types of animals that have developed large brains, mammals and birds. These two groups also consistenly have a higher BMR than other animals. This makes sense as it requires much more energy to maintain a larger brain and associated brain function. 
+			An important note the article makes is that there are two types of animals that have developed large brains, mammals and birds. These two groups also consistently have a higher BMR than other animals. This makes sense as it requires much more energy to maintain a larger brain and associated brain function. 
 			\newline \newline
 			Additionally, the article notes an important correlation between brain size and body mass. Using our above proportionality model, we can observe all three variables together as:
 			\newline
 			\centerline{$S \propto B^{A} \propto M^{\frac 3 4}$}
 			\newline
-			For a select group of mammals, the following set of data shows a standardized brain size to body ratiofor each mammal:
+			For a select group of mammals, the following set of data shows a standardized brain size to body ratio for each mammal:
 			\begin{center}
 				\begin{tabular}{l c}
 					Species & Brain-to-body ratio \\
@@ -245,8 +276,9 @@
 			\newline \newline
 			\centerline{\includegraphics{Picture10.pdf}}
 			\newline \newline
-			With the exception of humans and dolphins, the data seems to directly show a strong correlation between body mass and brain size; that is, as body mass increases, the brain size grows by a smaller proportion. The smallest mammal, the mouse, has the largest brain size compared to its body, and the larger mammals, such as the elephant or the hippopotamus, have the smallest brains compared to their body mass. This makes sense assuming maintained proportionality with BMR, as more energy is alloted towards running a larger body than a smaller one. The obvious outliers, the human and the dolphin, may be the result of other factors, such as gestational period and postnatal independence. 
+			With the exception of humans and dolphins, the data seems to directly show a strong correlation between body mass and brain size; that is, as body mass increases, the brain size grows by a smaller proportion. The smallest mammal, the mouse, has the largest brain size compared to its body, and the larger mammals, such as the elephant or the hippopotamus, have the smallest brains compared to their body mass. This makes sense assuming maintained proportionality with BMR, as more energy is allotted towards running a larger body than a smaller one. The obvious outliers, the human and the dolphin, may be the result of other factors, such as gestational period and postnatal independence. 
 	\section{Conclusion}
-		Biological allometry serves as an extremely interesting analysis of propotional physiological relationships. Using power models and nonlinear regressions, we can form accurate analyses of observed data and use that to predict
+		Biological allometry serves as an extremely interesting analysis of proportional physiological relationships. Using power models and nonlinear regressions, we can form accurate analyses of observed data and use that to predict further trends. We've seen how a power model can be used to create a model that shows the proportional relationship between fiddler crab mass and the mass of their major claw. We also used data and a nonlinear regression to create a model that shows the relationship between basal metabolic rate and body mass, which was further carried on to analyze the relationship between basal metabolic rate and brain size, which was shown as a relationship to body mass. This idea can also be used to show the relationship between brain size and gestational period and postnatal independence, as well as a number of other proportional physiological relationships.
 \end{document}
+
 
